@@ -12,7 +12,7 @@
     <header class="page-header">
       <div class="page-header__inner">
 
-        <img class="page-header__logo" src="img/page-header-logo.svg" alt="Логотип" width="50" height="30">
+        <img class="page-header__logo" src="img/page-header-logo.svg" alt="Логотип" width="51" height="30">
         <nav class="main-navigation">
           <div class="main-navigation__toggler">
             <span class="main-navigation__toggler-text">Меню</span>
@@ -46,13 +46,13 @@
           <h1 class="hero-section__title">Поддерживаем детей вместе, чтобы они могли жить полноценно.</h1>
           <p class="hero-section__text">Оказываем поддержку онкобольным детям и подросткам, организуем работу волонтёров</p>
           <p class="hero-section__text  hero-section__text--tablet">Оказываем психологическую поддержку онкобольным детям и подросткам и помогаем им вернуться в жизнь. Организуем работу волонтёров и продвигаем идею реабилитации в России.</p>
-          <form class="donate-form" action="#" method="post">
-            <input class="donate-form__input" type="text" name="amount" placeholder="100">
-            <select class="donate-form__select" name="frequency">
-              <option class="donate-form__select-option" value="monthly">Ежемесячно</option>
-              <option class="donate-form__select-option" value="single">Разово</option>
+          <form class="donate-form1" action="#" method="post">
+            <input class="donate-form1__input" type="text" name="amount" placeholder="100">
+            <select class="donate-form1__select" name="frequency">
+              <option class="donate-form1__select-option" value="monthly">Ежемесячно</option>
+              <option class="donate-form1__select-option" value="single">Разово</option>
             </select>
-            <button class="btn  donate-form__btn" type="submit">Пожертвовать</button>
+            <button class="btn  donate-form1__btn" type="submit">Пожертвовать</button>
           </form>
         </div>
 
@@ -180,8 +180,37 @@
         </article>
       </section>
 
+      <div class="donate">
+        <p class="donate__sub-title">Пожертвовать в фонд</p>
+        <h2 class="donate__title">Минута вашего времени поможет нам исполнять еще больше детских мечт.</h2>
+        <p class="donate__text">Все пожертвования уходят на реализацию наших проектов по оказанию психологической поддержки и реабилитации детей и подростков с онкологическими заболеваниями.</p>
+
+        <section class="donate__form-list">
+          <form class="donate-form2 action="#" method="post"">
+            <input class="donate-form2__input" id="single-donate" type="text" name="single-donate" placeholder="300">
+            <label class="donate-form2__label" for="single-donate">Вы также можете указать другую сумму.</label>
+            <button class="btn  donate-form2__btn" type="submit">Пожертвовать</button>
+          </form>
+          <form class="donate-form2 action="#" method="post"">
+            <input class="donate-form2__input" id="montly-donate" type="text" name="montly-donate" placeholder="100">
+            <label class="donate-form2__label" for="montly-donate">Помогайте каждый месяц. Вы также можете указать другую сумму.</label>
+            <button class="btn  donate-form2__btn" type="submit">Пожертвовать</button>
+          </form>
+        </section>
+      </div>
+
+      <div class="sms">
+        <h2 class="sms__title">Пожертвовать через СМС</h2>
+        <p class="sms__text">Отправьте сообщение на номер <span class="sms__text  sms__text--red">7715</span> с кодовым словом «Нить» и суммой пожертвования.</p>
+        <img class="sms__picture" src="img/donate-sms-phone.png" alt="Пожертвовать через СМС" width="294" height="515">
+      </div>
 
     </main>
+
+
+    <footer class="page-footer">
+
+    </footer>
 
 
     <script src="js/scripts.js"></script>
