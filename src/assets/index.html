@@ -319,6 +319,120 @@
     </footer>
 
 
+    <div class="modal-window">
+
+      <ul class="modal-navigation">
+        <li class="modal-navigation__list">
+          <a class="modal-navigation__link" href="#">Навигация</a>
+        </li>
+        <li class="modal-navigation__list">
+          <a class="modal-navigation__link" href="#">Пожертвовать</a>
+        </li>
+        <li class="modal-navigation__list">
+          <a class="modal-navigation__link" href="#">Контакты</a>
+        </li>
+      </ul>
+
+      <div class="menu">
+        <ul class="menu-navigation__list">
+          <li class="menu-navigation__item">
+            <a class="menu-navigation__link" href="#">Проекты</a>
+          </li>
+          <li class="menu-navigation__item">
+            <a class="menu-navigation__link" href="#">Волонтёрство</a>
+          </li>
+          <li class="menu-navigation__item">
+            <a class="menu-navigation__link" href="#">О фонде</a>
+          </li>
+          <li class="menu-navigation__item">
+            <a class="menu-navigation__link" href="#">Партнёры</a>
+          </li>
+          <li class="menu-navigation__item">
+            <a class="menu-navigation__link" href="#">Документы</a>
+          </li>
+          <li class="menu-navigation__item">
+            <a class="menu-navigation__link" href="#">Блог</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="modal-donate">
+        <h2 class="modal-donate__title">Пожертвовать</h2>
+        <form class="modal-form" action="#" method="post">
+
+          <div class="modal-form__block">
+            <label for="name">Ваше имя</label>
+            <input id="name" class="modal-form__input" type="text" name="name" placeholder="Константин Напримерный">
+            <p class="modal-form__text">Для анонимного пожертвования оставьте это поле незаполненным.</p>
+            <input class="modal-form__input" type="text" name="amount" placeholder="100">
+            <select class="modal-select" name="frequency">
+              <option class="modal-select__item" value="monthly">Ежемесячно</option>
+              <option class="modal-select__item" value="single">Разово</option>
+            </select>
+          </div>
+
+          <div class="modal-form__block">
+            <label for="card">Номер банковской карты</label>
+            <input id="card" class="modal-form__input" type="text" name="card" placeholder="1234 5678 9012 3456 7890">
+            <ul class="card-menu">
+              <li class="card-menu__item">
+                <a class="card-menu__link" href="#">Visa</a>
+              </li>
+              <li class="card-menu__item">
+                <a class="card-menu__link" href="#">MasterCard</a>
+              </li>
+              <li class="card-menu__item">
+                <a class="card-menu__link" href="#">Maestro</a>
+              </li>
+              <li class="card-menu__item">
+                <a class="card-menu__link" href="#">American Express</a>
+              </li>
+            </ul>
+
+            <label for="valid-until">Срок истечения</label>
+            <div class="modal-form__block1">
+              <input id="valid-until" class="modal-form__input" type="text" name="valid-until" placeholder="04">
+              <input id="valid-until" class="modal-form__input" type="text" name="valid-until" placeholder="2019">
+            </div>
+            <label for="cvv">Срок истечения</label>
+            <input id="cvv" class="modal-form__input" type="text" name="cvv" placeholder="657">
+            <label for="card-name">Имя на карте</label>
+            <input id="card-name" class="modal-form__input" type="text" name="card-name" placeholder="Konstantin Naprimerniy">
+          </div>
+
+          <div class="modal-form__block">
+            <label for="mail">Электронная почта</label>
+            <input id="mail" class="modal-form__input" type="text" name="mail" placeholder="incorrectemail.address">
+            <p class="modal-form__text">Пожалуйста, введите корректный адрес электронной почты.</p>
+          </div>
+
+          <button class="btn  modal-form__btn" type="submit">Подтвердить 500&#8381; в месяц</button>
+        </form>
+      </div>
+
+      <div class="modal-contacts">
+        <h2 class="modal-contact__title">Свяжитесь с нами</h2>
+        <div class="contacts-block">
+          <h3 class="modal-contacts__title">Контактный телефон</h3>
+          <a class="modal-contacts__phone" href="tel:+78125691474">+7 (812) 569-14-74</a>
+          <p class="modal-contacts__text">Нажмите на номер, чтобы позвонить. Отвечаем стабильно с понедельника по воскресененье с 10:00 до 22:00.</p>
+        </div>
+        <div class="contacts-block">
+          <h3 class="modal-contacts__title">Электронная почта</h3>
+          <a class="modal-contacts__mail" href="mailto:inbox@nitdobra.fund">inbox@nitdobra.fund</a>
+          <p class="modal-contacts__text">Нажмите на адрес, чтобы отправить письмо. Отвечаем каждый день, время ответа не более трёх часов.</p>
+        </div>
+        <div class="contacts-block">
+          <h3 class="modal-contacts__title">Наш офис</h3>
+          <p class="modal-contacts__adress">Пространство «Welcome», Невский проспект,  48,  Санкт-Петербург, 194283</p>
+          <p class="modal-contacts__text">Офис открыт для посещения по будням с 10:00 до 19:00, по субботам с 10:00 до 18:00.</p>
+        </div>
+        <img class="modal-contacts__map" src="img/google-map.jpg" alt="Карта проезда" width="736" height="402">
+      </div>
+
+    </div>
+
+
     <script src="js/scripts.js"></script>
   </body>
 </html>
