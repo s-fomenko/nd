@@ -1,0 +1,17 @@
+.page-header {
+  position: relative;
+  min-height: 500px;
+  background: url("../img/hospital-kid.jpg") no-repeat 50% 0;
+  background-size: 605px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    min-width: 320px;
+    min-height: 480px;
+    background: rgba(0, 0, 0, 0.4) no-repeat 50% 0;
+    top: 0;
+    left: 0;
+  }
+}
