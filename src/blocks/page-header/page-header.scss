@@ -1,17 +1,16 @@
 .page-header {
-  position: relative;
   min-height: 500px;
-  background: url("../img/hospital-kid.jpg") no-repeat 50% 0;
-  background-size: 605px;
+  background: url("../img/page-header-bg-mobile.jpg") no-repeat;
+  padding: 0 0.5rem;
 
-  &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    min-width: 320px;
-    min-height: 480px;
-    background: rgba(0, 0, 0, 0.4) no-repeat 50% 0;
-    top: 0;
-    left: 0;
+  &__inner {
+    @include inner;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    padding-top: 16px;
+    padding-left: 8px;
   }
 }

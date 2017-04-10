@@ -19,7 +19,9 @@ gulp.task("styles", function() {
     .pipe(sass())
     .pipe(postcss([
           autoprefixer({browsers: [
-            "last 2 versions"
+            "> 1%",
+            "last 2 versions",
+            "Firefox ESR"
           ]})
         ]))
     .pipe(cssnano())
@@ -67,6 +69,8 @@ gulp.task("watch", function() {
   gulp.watch("src/blocks/**/*.*", gulp.series("styles"));
 
   gulp.watch("src/**/*.html", gulp.series("assets"));
+
+  gulp.watch("src/blocks/**/*.{png,jpg,svg}", gulp.series("images"));
 });
 
 gulp.task("serve", function() {

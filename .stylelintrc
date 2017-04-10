@@ -271,6 +271,7 @@
         "/^else/",
         "/^function/",
         "/^return/",
+        "/^content/",
       ]
     }],
     "at-rule-no-vendor-prefix": [true, {

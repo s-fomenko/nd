@@ -1,0 +1,30 @@
+@mixin tablet () {
+
+  @media all and (min-width: #{$tablet-width}) {
+
+    @content;
+  }
+}
+
+@mixin desktop () {
+
+  @media all and (min-width: #{$desktop-width}) {
+
+    @content;
+  }
+}
+
+@mixin inner () {
+
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+
+  @include tablet {
+    max-width: 1024px;
+  }
+
+  @include desktop {
+    max-width: 1440px;
+  }
+}
