@@ -1,0 +1,38 @@
+.page {
+
+  &__sub-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: "PT Sans", Arial, sans-serif;
+    color: #f0f1f2;
+  }
+
+  &__title {
+    margin: 0;
+    padding-top: 25px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    font-family: "PT Sans Caption", Arial, sans-serif;
+    color: #ffffff;
+    box-sizing: border-box;
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "PT Serif", Georgia, serif;
+    color: #f0f1f2;
+    padding-top: 12px;
+    box-sizing: border-box;
+    margin-bottom: 32px;
+
+    &--tablet {
+      display: none;
+    }
+  }
+}

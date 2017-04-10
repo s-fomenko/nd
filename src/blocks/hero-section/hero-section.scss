@@ -1,0 +1,7 @@
+.hero-section {
+  padding-top: 85px;
+
+  &__inner {
+    @include inner;
+  }
+}

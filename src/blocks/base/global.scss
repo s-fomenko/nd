@@ -11,7 +11,7 @@ body {
 }
 
 .col-sm-6 {
-  width: 100%;
+  width: 99.999996%;
   padding: 0 0.5rem;
 }
 
@@ -43,7 +43,7 @@ body {
 @include tablet {
 
   .col-md-12 {
-    width: 100%;
+    width: 99.999996%;
     padding: 0 0.5rem;
   }
 
@@ -106,7 +106,7 @@ body {
 @include desktop {
 
   .col-lg-12 {
-    width: 100%;
+    width: 99.999996%;
     padding: 0 0.5rem;
   }
 
