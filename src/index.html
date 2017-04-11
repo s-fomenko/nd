@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Фонд «Нить Добра»</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700|PT+Sans:400,700|PT+Serif&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -12,43 +12,47 @@
 
     <header class="page-header">
 
-
       <div class="page-header__inner">
         <img class="page-header__logo" src="img/page-header-logo.svg" alt="Логотип" width="51" height="30">
         <nav class="main-navigation">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="#">Проекты</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="#">Волотёрство</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="#">О фонде</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="#">Партнёры</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="#">Документы</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="#">Блог</a>
+            </li>
+          </ul>
           <div class="main-navigation__toggler">
             <p class="main-navigation__toggler-text">Меню</p>
             <span class="main-navigation__toggler-elem"></span>
-            <ul class="main-navigation__list">
-              <li class="main-navigation__item">
-                <a class="main-navigation__link" href="#">Проекты</a>
-              </li>
-              <li class="main-navigation__item">
-                <a class="main-navigation__link" href="#">Волонтёрство</a>
-              </li>
-              <li class="main-navigation__item">
-                <a class="main-navigation__link" href="#">О фонде</a>
-              </li>
-              <li class="main-navigation__item">
-                <a class="main-navigation__link" href="#">Партнёры</a>
-              </li>
-              <li class="main-navigation__item">
-                <a class="main-navigation__link" href="#">Документы</a>
-              </li>
-              <li class="main-navigation__item">
-                <a class="main-navigation__link" href="#">Блог</a>
-              </li>
-            </ul>
           </div>
         </nav>
       </div>
 
+    </header>
+
+
+    <main class="page-main">
+
       <div class="hero-section">
         <div class="hero-section__inner">
-          <p class="page__sub-title  col-sm-3">Фонд «Нить Добра»</p>
-          <h1 class="page__title  col-sm-5">Поддерживаем детей вместе, чтобы они могли жить полноценно.</h1>
+          <p class="page__sub-title  col-sm-3 col-md-4">Фонд «Нить Добра»</p>
+          <h1 class="page__title  col-sm-5 col-md-10">Поддерживаем детей вместе, чтобы они могли жить полноценно.</h1>
           <p class="page__text col-sm-6">Оказываем поддержку онкобольным детям и подросткам, организуем работу волонтёров</p>
-          <p class="page__text  page__text--tablet">Оказываем психологическую поддержку онкобольным детям и подросткам и помогаем им вернуться в жизнь. Организуем работу волонтёров и продвигаем идею реабилитации в России.</p>
+          <p class="page__text  page__text--tablet  col-md-12">Оказываем психологическую поддержку онкобольным детям и подросткам и помогаем им вернуться в жизнь. Организуем работу волонтёров и продвигаем идею реабилитации в России.</p>
           <form class="donate-form1" action="#" method="post">
             <input class="donate-form1__input" type="text" name="amount" placeholder="100">
             <select class="page-select" name="frequency">
@@ -59,11 +63,6 @@
           </form>
         </div>
       </div>
-
-    </header>
-
-
-    <main class="page-main">
 
       <div class="video">
         <div class="video__inner">

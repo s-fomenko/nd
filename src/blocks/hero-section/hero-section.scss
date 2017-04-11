@@ -1,5 +1,21 @@
 .hero-section {
-  padding-top: 85px;
+  position: relative;
+  top: -46px;
+  padding: 0 0.5rem;
+  padding-top: 131px;
+  min-height: 369px;
+  background: url("../img/hero-bg-mobile.jpg") no-repeat;
+  background-size: cover;
+
+  @include tablet {
+    position: relative;
+    top: -60px;
+    padding: 0 2rem;
+    padding-top: 263px;
+    min-height: 530px;
+    background: url("../img/hero-bg-tablet.jpg") no-repeat;
+    background-size: cover;
+  }
 
   &__inner {
     @include inner;

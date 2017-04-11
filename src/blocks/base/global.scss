@@ -8,6 +8,14 @@ body {
   min-width: 320px;
   max-width: 1920px;
   font-size: 16px;
+
+  @include tablet {
+    font-size: 20px;
+  }
+
+  @include desktop {
+    font-size: 24px;
+  }
 }
 
 .col-sm-6 {

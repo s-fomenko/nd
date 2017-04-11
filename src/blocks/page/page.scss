@@ -35,4 +35,34 @@
       display: none;
     }
   }
+
+  @include tablet {
+
+    &__sub-title {
+      font-size: 20px;
+    }
+
+    &__title {
+      font-size: 45px;
+      line-height: 49.5px;
+      padding-top: 35px;
+    }
+
+    &__text {
+      display: none;
+
+      &--tablet {
+        display: block;
+        margin: 0;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 34px;
+        font-family: "PT Serif", Georgia, serif;
+        color: #f0f1f2;
+        padding-top: 15px;
+        box-sizing: border-box;
+        margin-bottom: 32px;
+      }
+    }
+  }
 }

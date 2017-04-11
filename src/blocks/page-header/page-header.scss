@@ -1,7 +1,7 @@
 .page-header {
-  min-height: 500px;
-  background: url("../img/page-header-bg-mobile.jpg") no-repeat;
   padding: 0 0.5rem;
+  position: relative;
+  z-index: 1;
 
   &__inner {
     @include inner;
@@ -12,5 +12,14 @@
   &__logo {
     padding-top: 16px;
     padding-left: 8px;
+  }
+
+  @include tablet {
+    padding: 0 2rem;
+
+    &__logo {
+      padding-top: 30px;
+      padding-left: 18px;
+    }
   }
 }
