@@ -4,4 +4,46 @@
   &__input {
     display: none;
   }
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__input {
+      display: block;
+      box-sizing: border-box;
+      width: 172px;
+      height: 39px;
+      padding: 5px 27px;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 34px;
+      font-family: "PT Sans", Arial, sans-serif;
+      color: rgb(150, 155, 160);
+      text-transform: uppercase;
+      letter-spacing: 3.4px;
+      background: rgba(255, 255, 255, 1);
+      border: 0;
+      border-radius: 23px;
+      outline: 0;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+      position: relative;
+
+      &--outer {
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 11px;
+          right: 23px;
+          display: block;
+          width: 13px;
+          height: 22px;
+          background: url("../img/rouble.svg") no-repeat;
+        }
+      }
+    }
+  }
 }
