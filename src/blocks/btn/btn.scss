@@ -16,8 +16,15 @@
   cursor: pointer;
 
   @include tablet {
-    font-size : 20px;
+    font-size: 20px;
     letter-spacing: 2px;
     padding: 11px 19px;
+  }
+
+  @include desktop {
+    font-size: 24px;
+    letter-spacing: 2.4px;
+    padding: 17px 22px;
+    border-radius: 23px;
   }
 }

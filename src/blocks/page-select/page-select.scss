@@ -53,4 +53,31 @@
       }
     }
   }
+
+  @include desktop {
+    border-radius: 23px;
+    width: 224px;
+    height: 97px;
+    padding: 11px 31px;
+    margin-right: 38px;
+
+    &::after {
+      width: 14px;
+      height: 7px;
+      top: 23px;
+      right: 30px;
+    }
+
+    &__item {
+
+      &:first-child {
+        margin-bottom: 18px;
+      }
+    }
+
+    &__link {
+      font-size: 19px;
+      line-height: 19px;
+    }
+  }
 }

@@ -48,4 +48,27 @@
       }
     }
   }
+
+  @include desktop {
+    padding-left: 13px;
+
+    &__input {
+      font-size: 34px;
+      line-height: 16px;
+      letter-spacing: 3.4px;
+      border-radius: 23px;
+      width: 204px;
+      height: 47px;
+      padding: 5px 30px;
+
+      &--outer {
+        margin-right: 36px;
+
+        &::after {
+          top: 17px;
+          right: 29px;
+        }
+      }
+    }
+  }
 }

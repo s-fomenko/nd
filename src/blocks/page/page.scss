@@ -66,4 +66,31 @@
       }
     }
   }
+
+  @include desktop {
+
+    &__sub-title {
+      font-family: "PT Sans", Arial, sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 24px;
+      color: rgb(240, 241, 242);
+    }
+
+    &__title {
+      font-family: "PT Sans Caption", Arial, sans-serif;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 39.6px;
+      color: rgb(255, 255, 255);
+      padding-top: 38px;
+    }
+
+    &__text--tablet {
+      font-family: "PT Serif", Georgia, serif;
+      font-size: 24px;
+      line-height: 41px;
+      color: rgb(240, 241, 242);
+    }
+  }
 }
