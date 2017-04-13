@@ -3,5 +3,54 @@
 
   @include tablet {
     display: block;
+    box-sizing: border-box;
+    width: 188px;
+    height: 80px;
+    padding: 7px 25px;
+    background: rgba(255, 255, 255, 1);
+    border: 0;
+    border-radius: 19px;
+    outline: 0;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-right: 21px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 6px;
+      top: 17px;
+      right: 25px;
+      background: url("../img/select-button.svg") no-repeat;
+    }
+
+    &__list {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    &__item {
+
+      &:first-child {
+        margin-bottom: 15px;
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 16px;
+      font-family: "PT Sans", Arial, sans-serif;
+      color: #485155;
+      text-transform: uppercase;
+      letter-spacing: 1.6px;
+
+      &--red {
+        color: rgb(250, 50, 90);
+      }
+    }
   }
 }
