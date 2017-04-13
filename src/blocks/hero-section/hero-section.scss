@@ -15,6 +15,15 @@
     background-size: cover;
   }
 
+  @include desktop {
+    position: relative;
+    top: -72px;
+    padding-top: 190px;
+    min-height: 500px;
+    background: url("../img/hero-bg-desktop.jpg") no-repeat;
+    background-size: cover;
+  }
+
   &__inner {
     @include inner;
   }

@@ -73,7 +73,7 @@
       margin: 0;
       padding: 0;
       padding-top: 26px;
-      width: 401px;
+      padding-left: 72px;
     }
 
     &__item {
@@ -101,6 +101,44 @@
       color: #f0f1f2;
       display: block;
       margin-right: 39px;
+    }
+  }
+
+  @include desktop {
+
+    &__toggler {
+      display: none;
+    }
+
+    &__list {
+      margin: 0;
+      padding: 0;
+      padding-top: 33px;
+      padding-left: 50px;
+    }
+
+    &__item {
+
+      &:nth-child(4) {
+        display: block;
+      }
+
+      &:nth-child(5) {
+        display: block;
+      }
+
+      &:nth-child(6) {
+        display: block;
+      }
+    }
+
+    &__link {
+      margin: 0;
+      padding: 0;
+      font-size: 19px;
+      line-height: 19px;
+      letter-spacing: 2px;
+      margin-right: 69px;
     }
   }
 }
