@@ -1,4 +1,6 @@
 .page {
+  position: relative;
+  z-index: 2;
 
   &__sub-title {
     margin: 0;
@@ -7,6 +9,8 @@
     line-height: 16px;
     font-family: "PT Sans", Arial, sans-serif;
     color: #f0f1f2;
+    position: relative;
+    z-index: 2;
   }
 
   &__title {
@@ -18,6 +22,8 @@
     font-family: "PT Sans Caption", Arial, sans-serif;
     color: #ffffff;
     box-sizing: border-box;
+    position: relative;
+    z-index: 2;
   }
 
   &__text {
@@ -30,6 +36,8 @@
     padding-top: 12px;
     box-sizing: border-box;
     margin-bottom: 32px;
+    position: relative;
+    z-index: 2;
 
     &--tablet {
       display: none;

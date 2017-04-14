@@ -1,5 +1,7 @@
 .donate-form1 {
   padding-left: 8px;
+  position: relative;
+  z-index: 2;
 
   &__input {
     display: none;

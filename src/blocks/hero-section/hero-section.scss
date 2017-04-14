@@ -3,16 +3,29 @@
   top: -46px;
   padding-top: 131px;
   min-height: 369px;
-  background: url("../img/hero-bg-mobile.jpg") no-repeat;
+  background: url("../img/hospital-kid.jpg") no-repeat center;
   background-size: cover;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
 
   @include tablet {
     position: relative;
     top: -60px;
     padding-top: 263px;
     min-height: 530px;
-    background: url("../img/hero-bg-tablet.jpg") no-repeat;
+    background: url("../img/hospital-kid.jpg") no-repeat center;
     background-size: cover;
+    overflow: hidden;
   }
 
   @include desktop {
@@ -20,8 +33,9 @@
     top: -72px;
     padding-top: 187px;
     min-height: 500px;
-    background: url("../img/hero-bg-desktop.jpg") no-repeat;
+    background: url("../img/hospital-kid.jpg") no-repeat center;
     background-size: cover;
+    overflow: hidden;
   }
 
   &__inner {
