@@ -1,6 +1,5 @@
 .hero-section {
   position: relative;
-  top: -46px;
   padding-top: 131px;
   min-height: 369px;
   background: url("../img/hospital-kid.jpg") no-repeat center;
@@ -20,7 +19,6 @@
 
   @include tablet {
     position: relative;
-    top: -60px;
     padding-top: 263px;
     min-height: 530px;
     background: url("../img/hospital-kid.jpg") no-repeat center;
@@ -30,7 +28,6 @@
 
   @include desktop {
     position: relative;
-    top: -72px;
     padding-top: 187px;
     min-height: 500px;
     background: url("../img/hospital-kid.jpg") no-repeat center;

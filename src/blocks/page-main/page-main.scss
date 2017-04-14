@@ -1,0 +1,12 @@
+.page-main {
+  position: relative;
+  top: -46px;
+
+  @include tablet {
+    top: -60px;
+  }
+
+  @include desktop {
+    top: -72px;
+  }
+}
