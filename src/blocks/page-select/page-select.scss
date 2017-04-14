@@ -14,6 +14,7 @@
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
     position: relative;
     margin-right: 21px;
+    transition: all 0.3s ease;
 
     &:hover {
       height: 80px;
@@ -21,6 +22,7 @@
 
     &:hover &__link--hidden {
       visibility: visible;
+      opacity: 1;
     }
 
     &::after {
@@ -55,9 +57,12 @@
       color: #485155;
       text-transform: uppercase;
       letter-spacing: 1.6px;
+      transition: all 0.3s ease;
 
       &--hidden {
         visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s ease;
       }
 
       &:hover {
