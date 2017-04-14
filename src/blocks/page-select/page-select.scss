@@ -5,7 +5,7 @@
     display: block;
     box-sizing: border-box;
     width: 188px;
-    height: 80px;
+    height: 38px;
     padding: 7px 25px;
     background: rgba(255, 255, 255, 1);
     border: 0;
@@ -14,6 +14,14 @@
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
     position: relative;
     margin-right: 21px;
+
+    &:hover {
+      height: 80px;
+    }
+
+    &:hover &__link--hidden {
+      visibility: visible;
+    }
 
     &::after {
       content: "";
@@ -48,7 +56,11 @@
       text-transform: uppercase;
       letter-spacing: 1.6px;
 
-      &--red {
+      &--hidden {
+        visibility: hidden;
+      }
+
+      &:hover {
         color: rgb(250, 50, 90);
       }
     }
@@ -57,9 +69,17 @@
   @include desktop {
     border-radius: 23px;
     width: 224px;
-    height: 97px;
+    height: 49px;
     padding: 11px 31px;
     margin-right: 38px;
+
+    &:hover {
+      height: 97px;
+    }
+
+    &:hover &__link--hidden {
+      visibility: visible;
+    }
 
     &::after {
       width: 14px;

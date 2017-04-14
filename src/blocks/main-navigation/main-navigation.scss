@@ -67,6 +67,7 @@
     letter-spacing: 1.6px;
     padding-top: 14px;
     padding-right: 3px;
+    justify-content: flex-end;
 
     &__list {
       display: flex;
@@ -90,6 +91,12 @@
       &:nth-child(6) {
         display: none;
       }
+
+      &:last-child {
+        a {
+          margin-right: 0;
+        }
+      }
     }
 
     &__link {
@@ -102,10 +109,15 @@
       color: #f0f1f2;
       display: block;
       margin-right: 39px;
+
+      &:hover {
+        color: rgb(250, 50, 90);
+      }
     }
   }
 
   @include desktop {
+    justify-content: flex-start;
 
     &__toggler {
       display: none;
