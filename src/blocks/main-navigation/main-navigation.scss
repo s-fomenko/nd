@@ -1,6 +1,5 @@
 .main-navigation {
 
-
   &__toggler {
     position: relative;
     display: flex;
@@ -110,6 +109,7 @@
       color: #f0f1f2;
       display: block;
       margin-right: 39px;
+      transition: all 0.3s ease;
 
       &:hover {
         color: rgb(250, 50, 90);
@@ -153,6 +153,7 @@
       line-height: 19px;
       letter-spacing: 2px;
       margin-right: 69px;
+      transition: all 0.3s ease;
     }
   }
 }

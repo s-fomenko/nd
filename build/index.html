@@ -81,13 +81,20 @@
         </div>
         <div class="video__inner">
 
-          <img class="video__poster" src="img/video-poster.png" alt="Соколовский" width="304" height="196">
-          <video class="video__clip" preload="metadata">
-            <source src="video/video.mp4" type="video/mp4; codecs="avc1.42E01E, mp4a.40.2"">
-            <source src="video/video.webm" type="video/webm; codecs="vp8, vorbis"">
-          </video>
+          <div class="video__wrapper">
+            <picture>
+              <source srcset="img/video-poster-tablet.png" media="(min-width: 768px)">
+              <source srcset="img/video-poster.png">
+              <img class="video__poster" srcset="img/video-poster.png" alt="Соколовский" width="100%" height="100%">
+            </picture>
 
-          <p class="video__text col-sm-6">Александр Солоковский рассказывает о фонде «Нить Добра» (2 минуты)</p>
+            <video class="video__clip" preload="metadata">
+              <source src="video/video.mp4" type="video/mp4; codecs="avc1.42E01E, mp4a.40.2"">
+              <source src="video/video.webm" type="video/webm; codecs="vp8, vorbis"">
+            </video>
+          </div>
+
+          <p class="video__text col-sm-6  col-md-10">Александр Солоковский рассказывает о фонде «Нить Добра» (2 минуты)</p>
         </div>
       </div>
 
