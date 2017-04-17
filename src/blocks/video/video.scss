@@ -1,37 +1,6 @@
-// .video {
-//   background: url("../img/sokolovskiy.jpg") no-repeat center;
-//   filter: grayscale(1);
-//   background-size: cover;
-//   overflow: hidden;
-//   position: relative;
-//   z-index: 1;
-//
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     width: 100%;
-//     height: 100%;
-//     top: 0;
-//     left: 0;
-//     // background: rgba(4, 27, 38, 0.9);
-//     z-index: 2;
-//   }
-//
-//   &__inner {
-//     @include inner;
-//   }
-//
-//   iframe {
-//     position: relative;
-//     z-index: 3;
-//     top: 40px;
-//     left: 8px;
-//     filter: none;
-//   }
-// }
-
 .video {
   position: relative;
+  min-height: 277px;
 
   &__inner {
     @include inner;
@@ -42,43 +11,52 @@
 
     &::before {
       content: "";
-      display: block;
       position: absolute;
-      width: 100%;
-      height: 100%;
       top: 0;
       left: 0;
-      background: rgba(4, 27, 38, 0.9);
       z-index: 3;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: rgba(4, 27, 38, 0.9);
     }
   }
 
   &__img {
-    width: 100%;
-    height: 100%;
-    filter: grayscale(1);
     position: relative;
     z-index: 2;
+    width: 100%;
+    height: 100%;
     min-height: 273px;
+    filter: grayscale(1);
+  }
 
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background: rgba(4, 27, 38, 0.9);
-      z-index: 3;
-    }
+  &__poster {
+    position: relative;
+    top: 22px;
+    z-index: 4;
   }
 
   &__clip {
-    width: 288px;
-    height: 150px;
-    position: relative;
+    position: absolute;
+    top: 40px;
+    left: 31px;
     z-index: 3;
+    width: 250px;
+    height: 150px;
     object-fit: cover;
+  }
+
+  &__text {
+    position: relative;
+    top: 5px;
+    z-index: 7;
+    width: 289px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 17px;
+    font-family: $pt-sans;
+    text-align: center;
+    color: rgb(150, 155, 160);
   }
 }
