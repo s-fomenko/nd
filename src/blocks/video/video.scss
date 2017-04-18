@@ -36,21 +36,28 @@
     width: 300px;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
   }
 
   &__poster {
     position: relative;
     top: 22px;
     z-index: 4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1, 1);
+    }
   }
 
   &__clip {
     position: absolute;
     top: 40px;
-    left: 31px;
+    left: 10px;
     z-index: 3;
-    width: 250px;
-    height: 150px;
+    width: 275px;
+    height: auto;
     object-fit: cover;
   }
 
@@ -71,14 +78,14 @@
     min-height: 415px;
 
     &__img {
-      // height: 390px;
+      height: 390px;
     }
 
-    &__poster {
-      width: 565px;
+    &__wrapper {
       height: 375px;
-      left: 64px;
-      top: 21px;
+      width: 565px;
+      margin: 0 auto;
+      position: relative;
     }
 
     &__clip {
@@ -92,7 +99,35 @@
       font-size: 16px;
       line-height: 23px;
       width: 670px;
-      top: -75px;
+      top: -70px;
+    }
+  }
+
+  @include desktop {
+
+    &__img {
+      height: 449px;
+    }
+
+    &__wrapper {
+      height: 445px;
+      width: 747px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    &__clip {
+      width: 447px;
+      height: 231px;
+      left: 149px;
+      top: 101px;
+    }
+
+    &__text {
+      font-size: 19px;
+      line-height: 23px;
+      width: 670px;
+      top: -84px;
     }
   }
 }
