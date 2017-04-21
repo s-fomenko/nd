@@ -59,6 +59,10 @@
     }
   }
 
+  &__link {
+    display: none;
+  }
+
   @include tablet {
 
     &__sub-title {
