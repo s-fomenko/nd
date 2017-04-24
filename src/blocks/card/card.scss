@@ -60,6 +60,62 @@
     }
   }
 
+  &__bg-3 {
+    position: relative;
+    margin-bottom: 16px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("../img/paris.jpg") no-repeat 50% -33px;
+      background-size: cover;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.35);
+      z-index: 1;
+    }
+  }
+
+  &__bg-4 {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: url("../img/volunteer-supplies.jpg") no-repeat 50% 0;
+      background-size: cover;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      transform: scale(-1, 1);
+      z-index: -1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.35);
+      z-index: 1;
+    }
+  }
+
   &__logo {
     display: none;
 
@@ -81,5 +137,24 @@
 
   &__text {
     display: none;
+  }
+
+  &__date {
+    font-family: $pt-sans;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    color: #f0f1f2;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    padding: 25px 9px;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
   }
 }
