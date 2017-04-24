@@ -150,11 +150,30 @@
     position: relative;
     z-index: 2;
     margin: 0;
-    padding: 25px 9px;
+    padding: 25px 9px 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -11px;
+      left: 9px;
+      width: 92px;
+      height: 2px;
+      background: #fa325a;
+      border-radius: 1px;
+    }
   }
 
   &__title {
     margin: 0;
-    padding: 0;
+    padding: 22px 9px 10px;
+    margin-bottom: 11px;
+    font-family: $pt-sans;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
   }
 }
